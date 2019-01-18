@@ -1,0 +1,29 @@
+{
+  "name": "comps_01",
+  "version": "0.0.1",
+  "description": "comps_01",
+  "keywords": "es6, modules, stdlib, util",
+  "homepage": "",
+  "bugs": "",
+  "repository": "ajrothwell/comps_01",
+  "license": "MIT",
+  "main": "dist/comps_01.umd.js",
+  "module": "dist/comps_01.esm.js",
+  "unpkg": "dist/comps_01.min.js",
+  "browser": {
+    "./sfc": "src/comps_01.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/comps_01.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/comps_01.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/comps_01.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-vue": "^4.6.1",
+    "vue": "^2.5.22",
+    "vue-template-compiler": "^2.5.22"
+  }
+}
