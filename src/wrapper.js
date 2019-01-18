@@ -1,12 +1,12 @@
 // Import vue component
-import component from './Badge.vue';
+import component from './my-component.vue';
 console.log('component:', component)
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
 	if (install.installed) return;
 	install.installed = true;
-	Vue.component('badge', component);
+	Vue.component('MyComponent', component);
 }
 
 console.log('install:', install);
