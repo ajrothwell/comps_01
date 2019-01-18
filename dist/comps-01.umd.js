@@ -356,7 +356,10 @@
   	GlobalVue = global.Vue;
   }
   if (GlobalVue) {
+  	console.log('yes GlobalVue');
   	GlobalVue.use(plugin);
+  } else {
+  	console.log('no GlobalVue');
   }
 
   exports.install = install;

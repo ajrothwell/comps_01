@@ -22,7 +22,10 @@ if (typeof window !== 'undefined') {
 	GlobalVue = global.Vue;
 }
 if (GlobalVue) {
+	console.log('yes GlobalVue');
 	GlobalVue.use(plugin);
+} else {
+	console.log('no GlobalVue');
 }
 
 // To allow use as module (npm/webpack/etc.) export component
