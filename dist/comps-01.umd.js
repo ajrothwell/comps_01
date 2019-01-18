@@ -334,6 +334,7 @@
     );
 
   // Import vue component
+  console.log('component:', component);
 
   // Declare install function executed by Vue.use()
   function install(Vue) {

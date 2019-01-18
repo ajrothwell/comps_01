@@ -328,6 +328,7 @@ __vue_render__._withStripped = true;
   );
 
 // Import vue component
+console.log('component:', component);
 
 // Declare install function executed by Vue.use()
 function install(Vue) {
