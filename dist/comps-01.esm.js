@@ -337,6 +337,8 @@ function install(Vue) {
 	Vue.component('badge', component);
 }
 
+console.log('install:', install);
+
 // Create module definition for Vue.use()
 var plugin = {
 	install: install,
@@ -350,7 +352,7 @@ if (typeof window !== 'undefined') {
 	GlobalVue = global.Vue;
 }
 if (GlobalVue) {
-	console.log('yes GlobalVue');
+	console.log('yes GlobalVue, plugin:', plugin);
 	GlobalVue.use(plugin);
 } else {
 	console.log('no GlobalVue');
