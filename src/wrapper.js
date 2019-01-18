@@ -1,5 +1,6 @@
 // Import vue component
-import component from './my-component.vue';
+// import component from './my-component.vue';
+import component from './Badge.vue';
 console.log('component:', component)
 
 // Declare install function executed by Vue.use()
